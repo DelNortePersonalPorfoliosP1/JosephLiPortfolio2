@@ -1,25 +1,47 @@
 //
 //  main.c
-//  pythagoraslab
+//  datatypesiolab2
 //
-//  Created by Li, Joseph on 9/10/19.
+//  Created by Li, Joseph on 9/13/19.
 //  Copyright © 2019 Li, Joseph. All rights reserved.
 //
 
 #include <stdio.h>
-#include <math.h>
 
-int main(int argc, const char * argv[]) {
+void main()
+{
+    int arr1[100];
+    int i, mx, mn, n;
     
-    double side1;
-    double side2;
-    printf("We will help prove the Pythagorean Theorem!");
-    printf("What is side 1?");
-    scanf("%lf",&side1);
-    printf("What is side 2?");
-    scanf("%lf",&side2);
-    double side3 = sqrt(side1*side1 + side2*side2);
-    printf ("the hypotenuse is %lf",side3);
+    printf("Input the number of elements to be stored in the array :");
+    scanf("%d",&n);
     
-    return 0;
+    printf("Input %d elements in the array :\n",n);
+    for(i=0;i<n;i++)
+    {
+        printf("element - %d : ",i);
+        scanf("%d",&arr1[i]);
+    }
+    
+    
+    mx = arr1[0];
+    mn = arr1[0];
+    
+    for(i=1; i<n; i++)
+    {
+        if(arr1[i]>mx)
+        {
+            mx = arr1[i];
+        }
+        
+        
+        if(arr1[i]<mn)
+        {
+            mn = arr1[i];
+        }
+    }
+    printf("Maximum element is : %d\n", mx);
+    printf("Minimum element is : %d\n\n", mn);
 }
+
+
