@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BBBDEC2333D77F00705424 /* datatypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 47BBBDEB2333D77F00705424 /* datatypes.c */; };
+		47BBBDEF2333D79500705424 /* pythagoras.c in Sources */ = {isa = PBXBuildFile; fileRef = 47BBBDEE2333D79500705424 /* pythagoras.c */; };
 		6DFF6CC12332F96800761211 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CC02332F96800761211 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		47BBBDEB2333D77F00705424 /* datatypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = datatypes.c; path = "../../GitHub/labs 9_18_19 /datatypes.c"; sourceTree = "<group>"; };
+		47BBBDED2333D78800705424 /* datatypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datatypes.h; sourceTree = "<group>"; };
+		47BBBDEE2333D79500705424 /* pythagoras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pythagoras.c; path = "../../GitHub/labs 9_18_19 /pythagoras.c"; sourceTree = "<group>"; };
+		47BBBDF02333D79C00705424 /* pythagoras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pythagoras.h; sourceTree = "<group>"; };
 		6DFF6CBD2332F96800761211 /* portfolio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = portfolio; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFF6CC02332F96800761211 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +63,10 @@
 		6DFF6CBF2332F96800761211 /* portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				47BBBDF02333D79C00705424 /* pythagoras.h */,
+				47BBBDEE2333D79500705424 /* pythagoras.c */,
+				47BBBDED2333D78800705424 /* datatypes.h */,
+				47BBBDEB2333D77F00705424 /* datatypes.c */,
 				6DFF6CC02332F96800761211 /* main.c */,
 			);
 			path = portfolio;
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BBBDEF2333D79500705424 /* pythagoras.c in Sources */,
 				6DFF6CC12332F96800761211 /* main.c in Sources */,
+				47BBBDEC2333D77F00705424 /* datatypes.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
